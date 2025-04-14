@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangible Interaction - My Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/moon_favicon.png" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-detail {
+            padding: 5rem 0;
+        }
+        
+        .project-header {
+            text-align: left;
+            margin-bottom: 3rem;
+        }
+        
+        .project-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: left;
+        }
+        
+        .project-content h1 {
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+            font-size: 2rem;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+        
+        .project-content h1:hover {
+            color: var(--primary-color);
+        }
+        
+        .project-content p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-description {
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-color);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: var(--primary-color);
+        }
+
+        .project-description a {
+            color: white;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .project-description a:hover {
+            color: var(--accent-color);
+        }
+
+        .project-image {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+            justify-content: center;
+        }
+
+        .project-image img {
+            width: 45%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html#home" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="index.html#case-studies">Case Studies</a></li>
+                <li><a href="index.html#playground">Playground</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="container">
+            <a href="index.html#playground" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Playground
+            </a>
+            <div class="project-header">
+                <h2>Tangible-Interaction</h2>
+            </div>
+            <div class="project-content">
+                <h1>Umbrella-Bus-Station</h1>
+                <p>Tools: Arduino, LED Strips, Conductive Copper Tape, Laser Cutting</p>
+                <p>Type: Tangible Interaction / Physical Computing</p>
+                <div class="project-image">
+                    <img src="assets/tangible interactions/station1.png" alt="Interactive Light Installation">
+                    <img src="assets/tangible interactions/station2.png" alt="Interactive Light Installation">
+                </div>
+
+                <div class="project-description">
+                    <p>The Umbrella Bus Station is a physical prototype of a smart, interactive bus stop designed for Vancouver's rainy and low-light environment. The station features an umbrella-shaped rooftop and an automatic lighting system that activates when a person walks inside, enhancing visibility and safety for both passengers and approaching bus drivers.
+                        Using Arduino, we connected 12V LED strips to a custom touch-sensor system made from conductive copper tape, which detected user presence at the station's entrance and exit. The lights turned on when someone entered, and automatically turned off once they left. We also laser-cut a clear, modular plastic structure to house the components and tested it in a physical environment.</p>
+                </div>
+                
+                <div class="project-details">
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li><strong>Automatic Lighting:</strong> LED system activates when users enter the station</li>
+                        <li><strong>Touch-Sensor System:</strong> Uses conductive copper tape for presence detection</li>
+                        <li><strong>Modular Design:</strong> Laser-cut structure for easy assembly and maintenance</li>
+                        <li><strong>Weather Protection:</strong> Umbrella-shaped design for rain protection</li>
+                    </ul>
+                </div>
+
+                <div class="project-description">
+                    <h3>Lesson Learned</h3>
+                    <p>This project taught me how to bring interactive ideas into the physical world. I learned how to work with hardware like Arduino and sensors, how to think through user behavior in real spaces, and how small details—like how lights respond—can shape a person's sense of safety and comfort. Collaborating with a teammate also helped me grow my problem-solving and communication skills throughout the process.</p>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <h1>Smart-Armrest</h1>
+                <p>Tools: Arduino, pressure sensor, portable speaker, circuit wiring</p>
+                <p>Type: Tangible Interaction</p>
+                <div class="project-image">
+                    <img src="assets/tangible interactions/armrest1.jpg" alt="Interactive Light Installation">
+                    <img src="assets/tangible interactions/armrest2.jpg" alt="Interactive Light Installation">
+                </div>
+
+                <div class="project-description">
+                    <p>This project was designed to help nervous flyers manage anxiety during takeoff—a phase of flight known to spike stress levels. Using Arduino, we built a smart armrest that detects a passenger's tight grip through a pressure sensor. When the grip indicates rising anxiety, the system automatically plays calming music through a portable speaker.
+                        Originally envisioned as a multi-sensor wearable system, the final prototype was refined into a more practical and accessible solution using simple hardware components. The goal was to provide immediate comfort without needing user input, making air travel a bit more soothing for those who need it most.</p>
+                </div>
+                
+                <div class="project-details">
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li><strong>Pressure Detection:</strong> Sensor detects user's grip intensity</li>
+                        <li><strong>Automatic Response:</strong> Triggers calming music when stress is detected</li>
+                        <li><strong>Non-Invasive Design:</strong> Integrated into standard airplane armrest</li>
+                        <li><strong>User-Friendly:</strong> Requires no manual input from the user</li>
+                    </ul>
+                </div>
+
+                <div class="project-description">
+                    <h3>Lesson Learned</h3>
+                    <p>This project taught me how to simplify a complex idea into a working prototype using the tools available. I learned how to identify the core user need and focus on one key input—the tight grip—to design an effective, user-friendly solution. It also helped me improve my skills in using Arduino and thinking creatively about real-world applications of technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Modeling - My Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/moon_favicon.png" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-detail {
+            padding: 5rem 0;
+        }
+        
+        .project-header {
+            text-align: left;
+            margin-bottom: 3rem;
+        }
+        
+        .project-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: left;
+        }
+        
+        .project-content h1 {
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+            font-size: 2rem;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+        
+        .project-content h1:hover {
+            color: var(--primary-color);
+        }
+        
+        .project-content p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-description {
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-color);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: var(--primary-color);
+        }
+
+        .project-description a {
+            color: white;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .project-description a:hover {
+            color: var(--accent-color);
+        }
+
+        .project-image {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+            width: 100%;
+        }
+
+        .project-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: contain;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html#home" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="index.html#case-studies">Case Studies</a></li>
+                <li><a href="index.html#playground">Playground</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="container">
+            <a href="index.html#playground" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Playground
+            </a>
+            <div class="project-header">
+                <h2>3D-Modeling&WebVR</h2>
+            </div>
+            <div class="project-content">
+                <h1>Memory-Palace</h1>
+                <p>Tools: Blender, A-Frame, Glitch</p>
+                <p>Type: WebVR, 3D Modeling</p>
+                <div class="project-image">
+                   <img src="assets/webvr/webvr.png" alt="Memory Palace VR Experience">
+                </div>
+
+                <div class="project-description">
+                    <p>This project explores how digital design can preserve and reinterpret cultural heritage. Working in a team of two, we created a WebVR experience centered around the Achaemenid bull capital — a powerful architectural artifact from ancient Persepolis, now housed at the Louvre.
+                        We 3D modeled the bull capital in Blender, focusing on its twin bull heads, fluted column shaft, and detailed carvings. The final model was optimized and exported as a .glb file, then integrated into a walkable A-Frame virtual pavilion with interactive elements.</p>
+                </div>
+                
+                <div class="project-details">
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li>Four informational panels that guide the viewer through the artifact's history, function, symbolism, and legacy.</li>
+                        <li>Custom lighting and spatial layout to reflect a museum-like atmosphere.</li>
+                        <li>Smooth camera controls for user exploration.</li>
+                        <li>A Sound that will be played as soon as the experience starts.</li>
+                    </ul>
+                </div>
+                <div class="project-description">
+                    
+                    <a href="https://galvanized-complete-tub.glitch.me/">View Project Live On Browser</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
